@@ -3,3 +3,6 @@ dist
 NOTES.md
 Dockerfile
 .dockerignore
+package-lock.json
+/hermione-html-reporter
+.idea
