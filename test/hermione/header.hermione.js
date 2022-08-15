@@ -2,7 +2,6 @@ const { assert } = require("chai");
 
 describe("Шапка магазина", async function () {
   beforeEach(async ({ browser }) => {
-    await browser.newWindow("/");
     await browser.url("/");
   })
 

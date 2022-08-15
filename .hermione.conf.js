@@ -1,9 +1,10 @@
 module.exports = {
     baseUrl: 'https://shri-homework.usr.yandex-academy.ru/',
-    gridUrl: 'http://192.168.0.104:4444/wd/hub',
+    gridUrl: 'http://10.227.89.158:4444/wd/hub',
 
-    screenshotDelay: 2000,
+    screenshotDelay: 1800,
     retry: 2,
+    testsPerSession: 1,
 
     windowSize: {
       width: 1200,

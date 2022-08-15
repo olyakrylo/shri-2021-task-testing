@@ -2,7 +2,6 @@ const { assert } = require("chai");
 
 describe("Страницы", async function () {
   beforeEach(async ({ browser }) => {
-    await browser.newWindow("/");
     await browser.url("/");
   });
 
