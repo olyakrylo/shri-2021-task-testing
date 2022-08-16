@@ -1,6 +1,6 @@
 module.exports = {
     baseUrl: 'https://shri-homework.usr.yandex-academy.ru/',
-    gridUrl: 'http://10.227.89.158:4444/wd/hub',
+    gridUrl: 'http://127.0.0.1:4444/wd/hub',
 
     screenshotDelay: 1800,
     retry: 2,
@@ -30,6 +30,7 @@ module.exports = {
         'html-reporter/hermione': {
             path: 'hermione-html-reporter'
         },
+        'hermione-standalone-runner': true
     }
 };
 

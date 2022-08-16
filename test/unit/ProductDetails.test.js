@@ -1,10 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-import {bundleProducts, getStore, init} from "../utils";
-import { render } from "@testing-library/react";
-import { BrowserRouter } from "react-router-dom";
-import { Provider } from "react-redux";
+import { bundleProducts, init } from "../utils";
 import { ProductDetails } from "../../src/client/components/ProductDetails";
 import * as React from "react";
 import { addToCart } from "../../src/client/store";

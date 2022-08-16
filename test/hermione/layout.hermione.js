@@ -43,7 +43,8 @@ describe("Адаптивная верстка", async function () {
       ignoreElements: [".nav-link"],
       compositeImage: false,
       allowViewportOverflow: true,
-      screenshotDelay: 300,
+      selectorToScroll: ".Application",
+      screenshotDelay: 800,
     });
   }
 
@@ -53,7 +54,8 @@ describe("Адаптивная верстка", async function () {
       ignoreElements: [".nav-link"],
       compositeImage: false,
       allowViewportOverflow: true,
-      screenshotDelay: 300,
+      selectorToScroll: ".Application",
+      screenshotDelay: 800,
     });
   }
 
@@ -63,6 +65,7 @@ describe("Адаптивная верстка", async function () {
       ignoreElements: [".nav-link"],
       compositeImage: false,
       allowViewportOverflow: true,
+      selectorToScroll: ".Application",
       screenshotDelay: 300,
     });
   }
@@ -73,6 +76,7 @@ describe("Адаптивная верстка", async function () {
       ignoreElements: [".nav-link", ".CartBadge", ".ProductItem-Name", ".ProductItem-Price", ".ProductItem-DetailsLink"],
       compositeImage: false,
       allowViewportOverflow: true,
+      selectorToScroll: ".Application",
       screenshotDelay: 300
     });
   }
@@ -83,7 +87,8 @@ describe("Адаптивная верстка", async function () {
       ignoreElements: [".nav-link", ".Cart-Name", ".Cart-Price", ".Cart-Count", ".Cart-Total", ".Cart-OrderPrice"],
       compositeImage: false,
       allowViewportOverflow: true,
-      screenshotDelay: 300
+      selectorToScroll: ".Application",
+      screenshotDelay: 800
     });
   }
 
@@ -116,7 +121,7 @@ describe("Адаптивная верстка", async function () {
     await checkCatalogPage("s", browser);
   });
 
-  it("Корзинв", async function({ browser }) {
+  it("Корзина", async function({ browser }) {
     await fillCart(browser);
 
     await browser.url("/cart");
