@@ -15,7 +15,7 @@ module.exports = (hermione) => {
       console.log("Selenium server started")
     });
 
-    await delay(3000);
+    await delay(5000);
   });
 
   hermione.on(hermione.events.RUNNER_END, () => {

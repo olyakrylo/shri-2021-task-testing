@@ -4,6 +4,8 @@ const widthBySize = {
   s: 450,
 }
 
+const browserHeight = 600;
+
 describe("Адаптивная верстка", async function () {
   async function clearCart(browser) {
     await browser.url("/cart");
@@ -38,7 +40,7 @@ describe("Адаптивная верстка", async function () {
   }
 
   async function checkMainPage(size, browser) {
-    await browser.setWindowSize(widthBySize[size], 800);
+    await browser.setWindowSize(widthBySize[size], browserHeight);
     await browser.assertView(`layout_${size}_base`, ".Application", {
       ignoreElements: [".nav-link"],
       compositeImage: false,
@@ -49,7 +51,7 @@ describe("Адаптивная верстка", async function () {
   }
 
   async function checkDeliveryPage(size, browser) {
-    await browser.setWindowSize(widthBySize[size], 800);
+    await browser.setWindowSize(widthBySize[size], browserHeight);
     await browser.assertView(`layout_${size}_delivery`, ".Application", {
       ignoreElements: [".nav-link"],
       compositeImage: false,
@@ -60,7 +62,7 @@ describe("Адаптивная верстка", async function () {
   }
 
   async function checkContactsPage(size, browser) {
-    await browser.setWindowSize(widthBySize[size], 800);
+    await browser.setWindowSize(widthBySize[size], browserHeight);
     await browser.assertView(`layout_${size}_contacts`, ".Application", {
       ignoreElements: [".nav-link"],
       compositeImage: false,
@@ -71,7 +73,7 @@ describe("Адаптивная верстка", async function () {
   }
 
   async function checkCatalogPage(size, browser) {
-    await browser.setWindowSize(widthBySize[size], 800);
+    await browser.setWindowSize(widthBySize[size], browserHeight);
     await browser.assertView(`layout_${size}_catalog`, ".Application", {
       ignoreElements: [".nav-link", ".CartBadge", ".ProductItem-Name", ".ProductItem-Price", ".ProductItem-DetailsLink"],
       compositeImage: false,
@@ -82,7 +84,7 @@ describe("Адаптивная верстка", async function () {
   }
 
   async function checkCartPage(size, browser) {
-    await browser.setWindowSize(widthBySize[size], 800);
+    await browser.setWindowSize(widthBySize[size], browserHeight);
     await browser.assertView(`layout_${size}_cart`, ".Application", {
       ignoreElements: [".nav-link", ".Cart-Name", ".Cart-Price", ".Cart-Count", ".Cart-Total", ".Cart-OrderPrice"],
       compositeImage: false,
